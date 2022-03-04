@@ -37,6 +37,7 @@ anchors:
     dockerfile: symbiflow
   <<: &SysDebianAmd64
     debian/bullseye:
+      - arm64v8
       #- amd64
   <<: &SysDebianArm64
     debian/bullseye:
