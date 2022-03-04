@@ -38,6 +38,9 @@ anchors:
   <<: &SysDebianAmd64
     debian/bullseye:
       - amd64
+  <<: &SysDebianArm64
+    debian/bullseye:
+      - arm64v8
   <<: &SysDebianDefaultArchSet
     <<: *SysDebianAmd64
     debian/bullseye:
@@ -242,7 +245,7 @@ jobs:
         - [ conda/symbiflow/xc7/a200t ]
         - [ conda/symbiflow/xc7/z010  ]
         - [ conda/symbiflow/xc7/z020  ]
-      sys: *SysDebianAmd64
+      sys: *SysDebianArm64
     symbiflow-eos-s3:
       images:
         - conda/symbiflow/eos-s3
