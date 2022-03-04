@@ -579,7 +579,7 @@ def PushImage(
       * ``#C``: collection
     """
     def dpush(imgName):
-        _exec(args=["docker", "push", imgName], dry=dry, collapse=f"Push {imgName}")
+        #_exec(args=["docker", "push", imgName], dry=dry, collapse=f"Push {imgName}")
 
     mirrors = [] if mirror is None else [mirror] if isinstance(mirror, str) else mirror
 

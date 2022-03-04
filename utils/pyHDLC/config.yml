@@ -37,17 +37,17 @@ anchors:
     dockerfile: symbiflow
   <<: &SysDebianAmd64
     debian/bullseye:
-      - amd64
+      #- amd64
   <<: &SysDebianArm64
     debian/bullseye:
       - arm64v8
   <<: &SysDebianDefaultArchSet
     <<: *SysDebianAmd64
     debian/bullseye:
-      - amd64
+      #- amd64
       - arm64v8
-      - ppc64le
-      - s390x
+      #- ppc64le
+      #- s390x
       #- riscv64 ! for now, only 'sid-slim' is available in https://hub.docker.com/r/riscv64/debian
 
 
